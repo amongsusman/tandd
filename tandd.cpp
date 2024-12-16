@@ -31,6 +31,6 @@ int main() {
     now = time(nullptr);
     cin >> num;
     // Finds the current time subtracted by the time since question was asked
-    cout << "The time that it took you to answer that question was: " << time(nullptr) - now << " seconds" << endl;
+    cout << "The time that it took you to answer that question was: " << difftime(time(nullptr), now) << " seconds" << endl;
     return 0;
 }
